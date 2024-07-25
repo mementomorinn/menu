@@ -35,12 +35,17 @@ a {
   margin-bottom: 10px;
 }
 .menu {
+  position: relative;
   background-color: #a1a4a5;
-
   font-size: 20px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   width: 185px;
+  transform-origin: 0 0;
+  transform: rotateX(-90deg);
+  transition: 0.2s;
+  visibility: hidden;
+  opacity: 0;
 }
 .menu_ref {
   text-align: left;
@@ -50,4 +55,15 @@ a {
 }
 .menu :hover {
   background-color: #4aa3a3;
+}
+
+.icon:hover + .menu {
+  opacity: 1;
+  visibility: visible;
+  transform: rotateX(0deg);
+}
+.menu:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: rotateX(0deg);
 }
