@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  background-color: #cacfd6;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.header {
+  background: #ffffff;
+  height: 100px;
+  padding: 0 20px;
+}
+.header_title {
+}
+.dropdown_menu {
+  width: 200px;
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.icon {
+  max-height: 70px;
+  margin-bottom: 10px;
+}
+.menu {
+  background-color: #a1a4a5;
+
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 185px;
+}
+.menu_ref {
+  text-align: left;
+  max-width: 100%;
+  padding: 5px 15px;
+  border: 1px solid #cacfd6;
+}
+.menu :hover {
+  background-color: #4aa3a3;
+}
